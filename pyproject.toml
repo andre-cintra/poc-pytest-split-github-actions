@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "poc-pytest-split-github-actions"
+version = "0.1.0"
+description = ""
+authors = ["Andre Cintra <andre.cintra@zup.com.br>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+pytest-split = "^0.8.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
