@@ -28,7 +28,7 @@ jobs:
         run: |
           poetry install
       - name: Run pytest
-        run: poetry run pytest --splits 2 --group ${{ matrix.group }}
+        run: poetry run pytest --splits 5 --group ${{ matrix.group }}
 
   # coverage:
   #   needs: test
