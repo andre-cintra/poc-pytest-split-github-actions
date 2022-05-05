@@ -1,6 +1,7 @@
-name: Run unit tests
+name: Unit tests
 
 on: 
+  workflow_dispatch:
   push:
     paths:
       - 'unit-tests.yml'
