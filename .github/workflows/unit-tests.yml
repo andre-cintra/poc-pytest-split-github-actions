@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        group: [1, 2, 3]
+        group: [1, 2, 3, 4, 5]
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python 3.9
@@ -28,7 +28,7 @@ jobs:
         run: |
           poetry install
       - name: Run pytest
-        run: poetry run pytest --splits 3 --group ${{ matrix.group }} --splitting-algorithm least_duration
+        run: poetry run pytest --splits 5 --group ${{ matrix.group }} --splitting-algorithm least_duration
 
   # coverage:
   #   needs: test
