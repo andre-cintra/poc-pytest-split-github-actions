@@ -24,4 +24,4 @@ This example is using parallelization level 5 which basically means that the who
 
 ![](https://user-images.githubusercontent.com/22433243/166979674-7eaec742-3a2d-4cb1-8f6d-57d36e18509d.png)
 
-_Note: The parellelism seems to only work until pytest-split==0.1.6, newest version return an exit code 5._
+_Note: The parellelism seems to only work until pytest-split==0.1.6, newest version return an [exit code 5](https://github.com/jerry-git/pytest-split/issues/26), no tests detected._
