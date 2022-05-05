@@ -25,7 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run pytest
-        run: pytest --cov --splits 5 --group ${{ matrix.group }} -n 2
+        run: pytest --cov --splits 5 --group ${{ matrix.group }}
       - name: Upload coverage
         uses: actions/upload-artifact@v2
         with:
