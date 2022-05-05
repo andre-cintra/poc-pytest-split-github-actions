@@ -19,7 +19,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run pytest
-        run: pytest --cov --splits 5 --group ${{ matrix.group }}
+        run: pytest --cov --splits 5 --group ${{ matrix.group }} -n 2
       - name: Upload coverage
         uses: actions/upload-artifact@v2
         with:
@@ -53,9 +53,7 @@ jobs:
             email: ${{ github.actor }}@users.noreply.github.com
             name: ${{ github.actor }}
             commit_message: add coverage files
-            target_branch: main
             files: .coverage coverage.xml
-            remote_repository: https://github.com/owner/another_repository
             access_token: ${{ secrets.ACCESS_TOKEN }}
             force: true
             empty: true
