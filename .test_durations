@@ -1,42 +1,12 @@
-[
-  [
-    "tests/test_functions.py::test_1_light",
-    10.001948377609253
-  ],
-  [
-    "tests/test_functions.py::test_2_light",
-    10.001492044448853
-  ],
-  [
-    "tests/test_functions.py::test_3_light",
-    10.002390644073486
-  ],
-  [
-    "tests/test_functions.py::test_4_light",
-    10.003853797912598
-  ],
-  [
-    "tests/test_functions.py::test_5_light",
-    10.003911018371582
-  ],
-  [
-    "tests/test_functions.py::test_6_light",
-    10.001911018371582
-  ],
-  [
-    "tests/test_functions.py::test_7_heavy",
-    60.01781081008911
-  ],
-  [
-    "tests/test_functions.py::test_8_heavy",
-    60.018584716796875
-  ],
-  [
-    "tests/test_functions.py::test_9_heavy",
-    60.01936911392212
-  ],
-  [
-    "tests/test_functions.py::test_10_heavy",
-    60.02344634056091
-  ]
-]
+{
+    "tests/test_functions.py::test_10_heavy": 60.005040854999976,
+    "tests/test_functions.py::test_1_light": 10.003047136,
+    "tests/test_functions.py::test_2_light": 10.001351509000004,
+    "tests/test_functions.py::test_3_light": 10.004276141999998,
+    "tests/test_functions.py::test_4_light": 10.000997179000002,
+    "tests/test_functions.py::test_5_light": 10.001433946999995,
+    "tests/test_functions.py::test_6_light": 10.026671773999993,
+    "tests/test_functions.py::test_7_heavy": 60.001318325999996,
+    "tests/test_functions.py::test_8_heavy": 60.00206859499998,
+    "tests/test_functions.py::test_9_heavy": 60.00443648200002
+}
