@@ -28,7 +28,7 @@ jobs:
         run: |
           poetry install
       - name: Run pytest
-        run: poetry run pytest --splits 3 --group ${{ matrix.group }}
+        run: poetry run pytest --splits 3 --group ${{ matrix.group }} --splitting-algorithm least_duration
 
   # coverage:
   #   needs: test
