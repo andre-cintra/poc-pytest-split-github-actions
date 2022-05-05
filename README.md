@@ -20,6 +20,6 @@ This repository highlights how to use `pytest-split` with GitHub Actions, using 
 
 Executing the tests sequentially, the total execution time is around 5 minutes (6 * 10 seconds + 4 * 60 seconds). By using parallel execution via matrix strategy and pytest-split splitting feature, we can get significant boost to total execution time of CI.
 
-This example is using parallelization level 5 which basically means that the whole test suite is split to 5 sub suites. When the split is done optimally, one sub suite contains 6 fast tests (around 10 seconds per test) and the other 4 sub suites contain one test which each take around 60 seconds to execute. 
+This example is using parallelization level 5 which basically means that the whole test suite is split to 5 sub suites. When the split is done optimally, one sub suite contains 6 fast tests (around 10 seconds per test) and the other 4 sub suites contain one test which each take around 60 seconds to execute. Which means that all tests could finish in around 1 minute.
 
-Meaning that all tests could finish in around 1 minute.
+_Note: The parellelism seems to only work until pytest-split==0.1.6, newest version return an exit code 5._
