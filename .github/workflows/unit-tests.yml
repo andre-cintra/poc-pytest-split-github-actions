@@ -49,3 +49,14 @@ jobs:
           coverage xml
       - uses: codecov/codecov-action@v2
       - uses: GuillaumeFalourd/git-commit-push@v1.3
+        with:
+            email: ${{ github.actor }}@users.noreply.github.com
+            name: ${{ github.actor }}
+            commit_message: add coverage files
+            target_branch: main
+            files: .coverage coverage.xml
+            remote_repository: https://github.com/owner/another_repository
+            access_token: ${{ secrets.ACCESS_TOKEN }}
+            force: true
+            empty: true
+            tags: true
